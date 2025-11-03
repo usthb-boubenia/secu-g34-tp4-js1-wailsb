@@ -7,12 +7,12 @@ let Etudiants=[
 ]
 // function B
 function B(moy){
-    return ((moy+moy2)/2)+5>10.0;
+    return moy>10.0;
 }
 // function A pour deliberation
 function A(){
     for(let e of Etudiants){
-        if(B(e.moy)){
+        if(B(((e.moy+e.moy2)/2)+5)){
             console.log(e.id+": ADMIS");
         }else{
             console.log(e.id+": AJOURNE");
